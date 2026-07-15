@@ -26,18 +26,10 @@ load_dotenv()
 app = FastAPI(title="Medicine Information Extractor")
 
 # CORS middleware
-# Set ALLOWED_ORIGINS env var in production (comma-separated URLs)
-# e.g. "https://your-app.vercel.app,https://another.domain"
-_raw_origins = os.getenv("ALLOWED_ORIGINS", "*")
-if _raw_origins == "*":
-    _allowed_origins = ["*"]
-else:
-    _allowed_origins = [o.strip() for o in _raw_origins.split(",")]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_allowed_origins,
-    allow_credentials=_raw_origins != "*",  # credentials can't be used with wildcard
+    allow_origins=["http://localhost:3000", "http://localhost:5173"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
