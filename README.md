@@ -243,8 +243,3 @@ REACT_APP_API_BASE_URL=http://localhost:8000   # change to Render URL in product
 
 This project is for educational purposes. Feel free to fork and build upon it.
 
-
-
-
-
-</div>
