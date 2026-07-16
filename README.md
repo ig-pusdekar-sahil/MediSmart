@@ -13,7 +13,6 @@
 **MediSmart** is an intelligent, full-stack medical assistant app powered by Google Gemini AI.  
 Scan medicine images, check drug interactions, generate PDF reports, and chat with an AI health assistant — all in one place.
 
-[🌐 Live Demo](#) • [📖 API Docs](#api-endpoints) • [🚀 Deploy Guide](#deployment)
 
 </div>
 
